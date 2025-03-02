@@ -16,7 +16,7 @@ export default function Counter() {
       isClosable: true,
       position: "bottom-right",
       render: () => (
-        <CounterToast count={count} />
+        <CounterToast count={count + 1} />
       ),
     });
   };

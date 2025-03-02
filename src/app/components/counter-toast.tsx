@@ -19,7 +19,7 @@ export default function CounterToast(props: { count: number }) {
       <Text fontWeight="500" fontSize="16px" lineHeight="26px" color="#FFFFFF">
         <strong>Incremented</strong>
         <br />
-        Counter is now {props.count + 1}
+        Counter is now {props.count}
       </Text>
     </Box>
   );
