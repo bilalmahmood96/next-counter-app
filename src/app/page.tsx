@@ -15,22 +15,18 @@ export default function Counter() {
       duration: 2000,
       isClosable: true,
       position: "bottom-right",
-      render: () => (
-        <CounterToast count={count + 1} />
-      ),
+      render: () => <CounterToast count={count + 1} />,
     });
   };
 
   return (
-    <>
-      <div className={styles.main}>
-        <Text fontSize="xl" color="black">
-          Current count {count}
-        </Text>
-        <Button onClick={handleClick} bgColor="#ebecef"  ml={4}>
-          +1
-        </Button>
-      </div>
-    </>
+    <div className={styles.main}>
+      <Text fontSize="xl" color="black">
+        Current count {count}
+      </Text>
+      <Button onClick={handleClick} bgColor="#ebecef" ml={4}>
+        +1
+      </Button>
+    </div>
   );
 }

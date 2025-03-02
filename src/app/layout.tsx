@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { ChakraProvider } from "@chakra-ui/react";
 import { CounterProvider } from "./providers/CounterProvider/CounterProvider";
+import { Providers } from "./providers/UIprovider/UIProvider";
 
 export const metadata: Metadata = {
   title: "Next Counter App",
@@ -15,9 +15,9 @@ export default function RootLayout({
   return (
     <html>
       <body>
-        <ChakraProvider>
+        <Providers>
           <CounterProvider>{children}</CounterProvider>
-        </ChakraProvider>
+        </Providers>
       </body>
     </html>
   );
